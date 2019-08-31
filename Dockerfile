@@ -17,10 +17,12 @@ RUN npm run ng build -- --prod --output-path=dist
 
 FROM nginx:1.17-alpine
 
-COPY nginx/default.conf /etc/nginx/conf.d/
+COPY nginx/default.conf.template /etc/nginx/conf.d/
 
 RUN rm -rf /usr/share/nginx/html/*
 
 COPY --from=builder /app/dist /usr/share/nginx/html
 
-CMD ["nginx", "-g", "daemon off;"]
+COPY run.sh /
+
+CMD ["/run.sh"]
