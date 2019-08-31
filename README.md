@@ -1,3 +1,5 @@
+[![Run on Google Cloud](https://storage.googleapis.com/cloudrun/button.svg)](https://console.cloud.google.com/cloudshell/editor?shellonly=true&cloudshell_image=gcr.io/cloudrun/button&cloudshell_git_repo=https://github.com/feloy/angular-deploy-to-cloud-run.git)
+
 # AngularDeployToCloudRun
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.2.
